@@ -1,0 +1,20 @@
+#populateButton{
+    height: 100px;
+    width: 200px;
+    border: rgb(85, 78, 78) 5px solid;
+}
+
+.spellContainer{
+    border: black 5px solid;
+    margin: 10px;
+    padding: 10px;
+    height: auto;
+}
+
+.spellImg{
+    /* height: 100px;
+    width: 100px; */
+    /* overflow: hidden; */
+    display: inline-block;
+
+}
