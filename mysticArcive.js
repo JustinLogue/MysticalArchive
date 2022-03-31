@@ -14,6 +14,7 @@ const spellBook ={
     //         1: "",
     //     },
     //     set: "",
+    //     collegeImg: "",
     //     college: "",
     //     addtionNotes: "",
     //     tags: {
@@ -21,10 +22,11 @@ const spellBook ={
     //     },
     //     range: "",
     //     components: "",
+    //     cost: false,
     //     spellText: "",
     //     atHigherLevel: "",
     //     imageUrl: "assets/.png",
-    //     imageDiscription: ,
+    //     imageDiscription: "",
     // },
     AbundantHarvest: {
         name: "Abundant Harvest",
@@ -40,13 +42,14 @@ const spellBook ={
         },
         set: "Mystic Archive",
         college: "Witherbloom",
+        collegeImg: "",
         addtionNotes: "",
         tags: {
-            1: "Witherbloom",
-            2: "Utility"
+            1: "Utility"
         },
         range: "Touch",
         components: "V, S, M(Grain of Wheat)",
+        cost: false,
         spellText: "You touch a plant which bears food and channel life force into it, upon which it starts to grow until, at end of spell duration, it has reached maturity and is ready to havest. Any plants or planted seeds in a 5 by 5 foot area are now fully grown into a tree, brush or whatever they gorw into and are ready to harvest.",
         atHigherLevel: "",
         imageUrl: "AbundantHarvest",
@@ -61,20 +64,24 @@ const spellBook ={
         ritual: "",
         castingTime: "1 action",
         duration: "Instantaneous",
-        classNames: "Bard, Cleric, Druid",
+        classNames: "Bard, Cleric, Druid, Ranger, Paladin",
         classes: {
             1: "Bard",
             2: "Cleric",
-            3: "Druid"
+            3: "Druid",
+            4: "Ranger",
+            5: "Paladin"
         },
         set: "Mystic Archive",
-        college: "None",
+        college: "Lorehold",
+        collegeImg: "",
         addtionNotes: "",
         tags: {
             1: "Utility",
         },
         range: "Self",
         components: "V, S",
+        cost: false,
         spellText: "You think of a object or person as you cast the spell. Upon casting you now know the exact direction from where you cast the spell at the time or casting. This spell can't tell you if the object or person is moving. The spell doesn't tell you the path you can take or the distance you need to go, only the direction.",
         atHigherLevel: "",
         imageUrl: "AdventurousImpulse",
@@ -88,13 +95,14 @@ const spellBook ={
         school: "Enchantment",
         ritual: "",
         castingTime: "1 Action",
-        duration: "1 Minute (Conceration)",
+        duration: "Conceration, up to 1 Minute",
         classNames: "Warlock",
         classes: {
             1: "Warlock",
         },
         set: "Mystic Archive",
-        college: "Silverquill",
+        college: "Oriq",
+        collegeImg: "",
         addtionNotes: "",
         tags: {
             1: "Damage",
@@ -102,8 +110,9 @@ const spellBook ={
         },
         range: "30 feet",
         components: "V, S",
+        cost: false,
         spellText: "You fill the target full of remorse at the bare through of hurting you. The target must make a wisdom saving throw, on a failed save the remorse lache into the tragets pysche and will now take 2d6 psychic damage when ever it tires to make an attack action against you or targets you with a spell. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.",
-        atHigherLevel: "<strong>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.</strong>",
+        atHigherLevel: "<strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
         imageUrl: "AgonizingRemorse",
         imageDiscription: "A man being haunted by a bloody memory",
     },
@@ -121,50 +130,138 @@ const spellBook ={
             2: "Cleric"
         },
         set: "Mystic Archive",
-        college: "",
+        college: "Lorehold",
+        collegeImg: "",
         addtionNotes: "",
         tags: {
             1: "Healing",
         },
         range: "Touch",
         components: "V, S, M(a shard of stained glass)",
-        spellText: "You a touch a creature and fill it with the energy of a second sun rise over the desert. If this is the first time you cast this spell since your last long rest then the target gains 70 hit points. If this is the second time or more then instead, the target is healed to full hit points, cured of all non-magic disease and cured of any blinded, deafened, paralyzed and posioned conditions.",
+        spellText: "You a touch a creature and fill it with the energy of a second sun rise over the desert as radiant grow rises above your head. If this is the first time you cast this spell since your last long rest then the target gains 70 hit points. If this is the second time or more then instead, the target is healed to full hit points, cured of all non-magic disease and cured of any conditions (etc ...blinded, deafened, paralyzed and posioned).",
         atHigherLevel: "",
         imageUrl: "ApproachOfTheSecondSun",
         imageDiscription: "An image of two suns rising through the entrace of a cave shaped liek the profile of a head.",
     },
-        // BrainStrom: {
-    //     name: "",
-    //     level: ,
-    //     levelName: "",
-    //     school: "",
-    //     ritual: "",
-    //     castingTime: "",
-    //     duration: "",
-    //     classNames: "",
-    //     classes: {
-    //         1: "",
-    //     },
-    //     set: "",
-    //     college: "",
-    //     addtionNotes: "",
-    //     tags: {
-    //         1: "",
-    //     },
-    //     range: "",
-    //     components: "",
-    //     spellText: "",
-    //     atHigherLevel: "",
-    //     imageUrl: "assets/.png",
-    //     imageDiscription: ,
-    // },
+    BrainStorm: {
+        name: "Brain Storm",
+        level: 1,
+        levelName: "1st",
+        school: "Divination",
+        ritual: "(ritual)",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Wizard",
+        classes: {
+            1: "Wizard",
+        },
+        set: "Mystic Archive",
+        college: "Quandrix",
+        addtionNotes: "",
+        tags: {
+            1: "Utility",
+        },
+        range: "Self",
+        components: "V, S, M (caster's spell book)",
+        spellText: "Choose three spells your character knows but does not have prepaired. These spells are know prepaired untill you next long rest. Pick two spells your character has prepaired, these spells are now no longer perpaired.",
+        atHigherLevel: "",
+        imageUrl: "brainStorm",
+        imageDiscription: "A young wizard having an epiphany.",
+    },
+    Channel: {
+        name: "Channel",
+        level: 5,
+        levelName: "5th",
+        school: "Conjuration",
+        ritual: "",
+        castingTime: "1 Action",
+        duration: "Concentration, up to 1 mintue",
+        classNames: "Druid, Sorcerer",
+        classes: {
+            1: "Druid",
+            2: "Sorcerer"
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Witherbloom",
+        addtionNotes: "",
+        tags: {
+            1: "Buff",
+        },
+        range: "Self",
+        components: "V, S, M(a seed acorn or bulb)",
+        spellText: "You focus on pulling raw magic through the weave itself to empower you. For the remainer of the spell's duration, whenever you expend a spell slot 1st level or higher to cast a spell you many choose to cast that spell at a higher level. You many not choose to cast that spell at a spell level you don't yet have the ability to cast it at yet. For each level above the orignal spell slot expended you choose you take 1d20 nercotic damage per level, effects or ablities can not reduce this damage or redirect it.",
+        atHigherLevel: "",
+        imageUrl: "channel",
+        imageDiscription: "A shaman drawing magic from the land itself",
+        // 
+    },
+    ChaosWarp: {
+        name: "Chaos Warp",
+        level: 3,
+        levelName: "3rd",
+        school: "Transmutation",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Wizard, Warlock",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard",
+            3: "Warlock"
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Oriq",
+        addtionNotes: "",
+        tags: {
+            1: "Random",
+            2: "Combat"
+        },
+        range: "60 feet",
+        components: "V, S",
+        spellText: "You call on the chaotic energies of the weave to change a single creature within range. The creature being targeted makes a charisma saving throw, on a failure roll a 1d100 and then replace the targeted creature with another creature or object on the table matching the roll. Any non-magic gear the creature had on them before the spell was cast melds into the creatures or object new form. Any magic items on the creature become unequipped and unattuned and fall on the ground direct beneath the creature. If the creature was perviously hostile then it remains hostile if it becomes a new creature.The target assumes the hit points of its new form.<br><b>1</b> - The Deck of Many Things<br><b>2</b> - A diamond worth 500 gp<br><b>3</b> - A +1 long bow<br><b>4</b> - A +1 longsword<br><b>5</b> - A gold necklace worth 50 gp<br><b>6</b> - A 5 foot by 3 foot framed painting of the creature<br><b>7</b> - A single gold piece<br><b>8</b> - A single Copper piece<br><b>9-10</b> - Awakened shrub<br><b>11-12</b> - A goat<br><b>13-14</b> - A zombie<br><b>15-16</b> - A Rust monster<br><b>17-18</b> - A Bugbear<br><b>19-20</b> - A Dire wolf 500 gp<br><b>21-22</b> - A mimic pretending to be a object of the DM's choice<br><b>23-24</b> - An Ogre<br><b>25-26</b> - A Gelatinous Cube<br><b>27-28</b> - A Displacer beast<br><b>29-30</b> - A Hell hound<br><b>31-32</b> - A Manticore<br><b>33-34</b> - An Owl bear<br><b>35-36</b> - A Black pudding<br><b>37-38</b> - A Ghost<br><b>39-40</b> - A Troll<br><b>41-42</b> - An Air elemental<br><b>43-44</b> - An Earth elemental<br><b>45-46</b> - A Fire elemental<br><b>47-48</b> - A Water elemental<br><b>49-50</b> - A Mammoth<br><b>51-52</b> - A Medusa<br><b>53-54</b> - A Wyren<br><b>55-56</b> - A Stone giant<br><b>57-58</b> - A Hydra<br><b>59-60</b> - A Treant gp<br><b>61-62</b> - A Stone Golem<br><b>63-64</b> - A Young Gold Dragon<br><b>65-66</b> - A Young Red Dragon<br><b>67-68</b> - A Djinni<br><b>69-70</b> - A Roc<br><b>71-72</b> - A Beholder<br><b>73-74</b> - A Storm Giant<br><b>75-76</b> - A Vampire<br><b>77-78</b> - A Purple Worm<br><b>79-80</b> - An Iron Golem<br><b>81-82</b> - An Androsphinx<br><b>83-84</b> - A Death Knight<br><b>85-86</b> - A Dragon Turtle<br><b>87-88</b> - A Balor<br><b>89-90</b> - A Pit Fiend<br><b>91-92</b> - A Solar<br><b>93-94</b> - A Kraken<br><b>95-96</b> - An Ancient Gold Dragon<br><b>97-98</b> - An Ancient Red Dragon<br><b>99</b> - A Tarrasque<br><b>100</b> - Roll two more times a create both rolls<br>",
+        atHigherLevel: "<strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
+        imageUrl: "chaosWarp",
+        imageDiscription: "A Dragon being transformed into a box",
+    },
+    CruxOfFate: {
+        name: "Crux of Fate",
+        level: 5,
+        levelName: "5th",
+        school: "Divination",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Cleric, Wizard, Warlock",
+        classes: {
+            1: "Cleric",
+            2: "Wizard",
+            3: "Warlock"
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Oriq",
+        addtionNotes: "",
+        tags: {
+            1: "Combat",
+            2: "Modular"
+        },
+        range: "120 feet",
+        components: "V, S, M(a coin with a dragon on one side, worth 1 gp)",
+        spellText: "",
+        atHigherLevel: "",
+        imageUrl: "assets/.png",
+        imageDiscription: "",
+    },
 }
 
 app.innit = () => {
-    // console.log("started")
+    console.log("started")
     app.populate();
-    // app.displayAll();
-    // app.depopulate();
+    app.levelSelect();
+    var userlevel;
+
 };
 
 app.populate = () => {
@@ -185,7 +282,8 @@ app.displayAll = () => {
         <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
         <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
         <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
-        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime}<br></p>
+        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
         <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
         <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
         <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
@@ -200,6 +298,44 @@ app.displayAll = () => {
     }
     $(".spellArea").append(html1);
 }
+
+app.levelSelect = () =>{
+    $("#levelSelection").on('change', function(){
+        userLevel =$('option:selected').val();
+        console.log(userLevel);
+        $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            if (userLevel == spellBook[spell].level){
+                console.log(spellBook[spell].name)
+                // html1 += `<p>${spellBook[spell].name}</p><br>`
+                html1 +=`<div class="spellContainer">
+                <h2>${spellBook[spell].name}</h2>
+                <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                <p>${spellBook[spell].addtionNotes}</p>
+                <p>${spellBook[spell].spellText}</p><br>
+                <p>${spellBook[spell].atHigherLevel}</p>
+                    <div class="spellImg">
+                    <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                    </div>
+                </div>
+                `;
+        }}
+        $(".spellArea").append(html1);
+        
+    })
+    
+}
+
 
 app.depopulate = () => {
     // console.log("Depopluate Spell Area!")
