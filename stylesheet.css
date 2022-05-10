@@ -1,7 +1,22 @@
 #populateButton{
-    height: 100px;
-    width: 200px;
-    border: rgb(85, 78, 78) 5px solid;
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color:white;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 6px #999;
+}
+
+#populateButton:hover{
+    background-color: #282828;
+}
+
+#populateButton:active{
+    background-color: #282828;
+    box-shadow: 0 3px #999;
+    transform: translateY(3px);
 }
 
 .spellContainer{

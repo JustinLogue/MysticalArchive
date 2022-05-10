@@ -115,6 +115,7 @@ const spellBook ={
         atHigherLevel: "<strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d6 for each slot level above 2nd.",
         imageUrl: "AgonizingRemorse",
         imageDiscription: "A man being haunted by a bloody memory",
+        // I'm saving duress for actually blocking spells,so i went with a spell that fit the name
     },
     ApproachoftheSecondSun: {
         name: "Approach of the Second Sun",
@@ -142,6 +143,7 @@ const spellBook ={
         atHigherLevel: "",
         imageUrl: "ApproachOfTheSecondSun",
         imageDiscription: "An image of two suns rising through the entrace of a cave shaped liek the profile of a head.",
+        // So i made this a healing spell with extra effects if it cast twice in a "day"
     },
     BrainStorm: {
         name: "Brain Storm",
@@ -167,6 +169,7 @@ const spellBook ={
         atHigherLevel: "",
         imageUrl: "brainStorm",
         imageDiscription: "A young wizard having an epiphany.",
+        // this was the easiest one to adapt, it only works with a wizard spell book rules but should be useful when learned
     },
     Channel: {
         name: "Channel",
@@ -190,11 +193,11 @@ const spellBook ={
         },
         range: "Self",
         components: "V, S, M(a seed acorn or bulb)",
-        spellText: "You focus on pulling raw magic through the weave itself to empower you. For the remainer of the spell's duration, whenever you expend a spell slot 1st level or higher to cast a spell you many choose to cast that spell at a higher level. You many not choose to cast that spell at a spell level you don't yet have the ability to cast it at yet. For each level above the orignal spell slot expended you choose you take 1d20 nercotic damage per level, effects or ablities can not reduce this damage or redirect it.",
+        spellText: "You focus on pulling raw magic through the weave itself to empower you. For the remainer of the spell's duration, whenever you expend a spell slot 1st level or higher to cast a spell you many choose to cast that spell at a higher level. You may not choose to cast that spell at a spell level you don't yet have the ability to cast it at yet. For each level above the orignal spell slot expended you choose you take 1d20 nercotic damage per level, effects or ablities can not reduce this damage or redirect it.",
         atHigherLevel: "",
         imageUrl: "channel",
         imageDiscription: "A shaman drawing magic from the land itself",
-        // 
+        // I'm not sure how to power this spell, the idea was to use mana ramp as free higher level spell slots with damage and some limitations as a drawback
     },
     ChaosWarp: {
         name: "Chaos Warp",
@@ -224,6 +227,7 @@ const spellBook ={
         atHigherLevel: "<strong>At Higher Levels. </strong>When you cast this spell using a spell slot of 4th level or higher, you can target one additional creature for each slot level above 3rd.",
         imageUrl: "chaosWarp",
         imageDiscription: "A Dragon being transformed into a box",
+        // So I made a point to make creatures from each cr and then some items 
     },
     CruxOfFate: {
         name: "Crux of Fate",
@@ -247,12 +251,41 @@ const spellBook ={
             1: "Combat",
             2: "Modular"
         },
-        range: "120 feet",
+        range: "personal",
         components: "V, S, M(a coin with a dragon on one side, worth 1 gp)",
-        spellText: "",
+        spellText: "You call upon the strands of fate to unleash raw potential power. You pick dragon or non-dragon, then each creature of the chosen type within a 120 feet circle centered on you makes a constitution saving throw. All creatures take 10d10 damage on a failed save, half that on a successful one. All dragons within 100 miles of the caster become instantly aware that this spell was cast and where it was cast. The caster has disadvantage on all wisdom saving throws against the scry spell cast by dragons for the next 24 hours. ",
         atHigherLevel: "",
-        imageUrl: "assets/.png",
+        imageUrl: "CruxOfFate",
         imageDiscription: "",
+        // This is does damage to dragon or non-dragons like the card but the damage is not yet set in stone. Right now it's high so that if you cast it to hit no dragons it will hurt your party as well as the enemy npcs
+    },
+    Despark: {
+        name: "Despark",
+        level: 4,
+        levelName: "4th",
+        school: "necromancy",
+        ritual: "",
+        castingTime: "1 Action",
+        duration: "Instantaneous",
+        classNames: "Druid, Sorcerer, Cleric",
+        classes: {
+            1: "Druid",
+            2:"Sorcerer",
+            3:"Cleric",
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Prismari",
+        addtionNotes: "",
+        tags: {
+            1: "Damage",
+        },
+        range: "30 Feet",
+        components: "V, S",
+        spellText: "You call upon the forces of death to sever a soul's attachment to the body it is in. You choose one target within range, they make a Constitution saving throw. On a sucess nothing happens. On a failure the target takes 10d8 necrotic damage. If this damage would be enough to kill the target and the target has someway of rejuvenating or resurrecting its body, such as devils reappearing in the nine hells when killed or a lich spawning a new body from it's phylactery, then this spell prevents that rejuvenation and they die like most other creatures. This spell doesn't stop future creatures using magic to bring the target back to life, such as with a Resurrection spell.",
+        atHigherLevel: "<strong>At Higher Levels. </strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d8 for each slot level above 4th.",
+        imageUrl: "Despark",
+        imageDiscription: "A dragon pulling the life force out of several people",
     },
 }
 
