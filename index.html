@@ -8,24 +8,34 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1>Strixhaven Spell Library</h1>
-    <div id="populateButton"><p>Display All!</p></div>
+    <div class="wrapper">
+        <h1>Strixhaven Spell Library</h1>
+
+        <!-- <div class="bibloplex">
+            <h2>Welcome to the bibloplex</h2>
+            <p>The bibloplex is the Library of Strix</p>
+        </div> -->
+        
+
+        <div id="populateButton"><p>Display All!</p></div>
+        
+        <h3>Spell Level</h3>
+        <select name="" id="levelSelection">
+            <option value="0">Cantrip</option>
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+            <option value="6">Level 6</option>
+            <option value="7">Level 7</option>
+            <option value="8">Level 8</option>
+            <option value="9">Level 9</option>
+        </select>
+        
+        <div class="spellArea"></div>
     
-    <h3>Spell Level</h3>
-    <select name="" id="levelSelection">
-        <option value="0">Cantrip</option>
-        <option value="1">Level 1</option>
-        <option value="2">Level 2</option>
-        <option value="3">Level 3</option>
-        <option value="4">Level 4</option>
-        <option value="5">Level 5</option>
-        <option value="6">Level 6</option>
-        <option value="7">Level 7</option>
-        <option value="8">Level 8</option>
-        <option value="9">Level 9</option>
-    </select>
-    
-    <div class="spellArea"></div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="mysticArcive.js"></script>

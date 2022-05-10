@@ -1,3 +1,14 @@
+.wrapper{
+padding-right: 10%;
+padding-left: 10%;
+
+}
+
+.bibloplex{
+    background: url(./assets/TheBiblioplex.jpg);
+    text-align: center;
+}
+
 #populateButton{
     height: 50px;
     width: 100px;
@@ -21,15 +32,44 @@
 
 .spellContainer{
     border: black 5px solid;
-    margin: 10px;
+    margin-top: 20px;
     padding: 10px;
     height: auto;
+    background-image: url(./assets/parchment.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-style: outset;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    
+    
+
 }
 
+.spellInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.spellContainer p{
+    margin: 5px;
+}
+
+
+
 .spellImg{
-    /* height: 100px;
-    width: 100px; */
-    /* overflow: hidden; */
-    display: inline-block;
+    display: flex;
+    border: black  3px solid;
+    float: right;
+    height: 300px;
+
+  
+
 
 }
