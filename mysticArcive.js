@@ -324,12 +324,44 @@ const spellBook ={
         imageUrl: "DoomBlade",
         imageDiscription: "An angel being harm by a dark blade",
     },
+    Duress: {
+        name: "Duress",
+        level: 1,
+        levelName: "1st",
+        school: "Abjuration",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "1 round",
+        classNames: "Bard, Wizard, Paladin, Sorcerer",
+        classes: {
+            1: "Bard",
+            2: "Wizard",
+            3: "Paladin",
+            4: "Sorcerer"
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Silver Quil",
+        addtionNotes: "",
+        tags: {
+            1: "Control",
+        },
+        range: "30 feet",
+        components: "V, S",
+        cost: false,
+        spellText: "You tax the mind of foe. One target in range makes a Wisdom saving throw. On a failure they have disadvanatge on concentration checks for the duration of the spell.",
+        atHigherLevel: "<strong>At Higher Levels. </strong> When you cast this spell using a spell slot of 2nd level or higher, the duration increases by 1 round for each slot level above 2nd.",
+        imageUrl: "duress",
+        imageDiscription: "",
+        // orginally I was thinking of allowing this spell to see a spell caster's spell list and block one spell for a round but then i decided to give that to Inquisition of Kozilek because the name is better, so I went with an effect that matches the name of the spell while still affecting spell casting so it's "somewhat" similar to hand attack.
+    },
 }
 
 app.innit = () => {
     console.log("started")
     app.populate();
     app.levelSelect();
+    app.clear();
     var userlevel;
 
 };
@@ -385,18 +417,20 @@ app.levelSelect = () =>{
                 console.log(spellBook[spell].name)
                 // html1 += `<p>${spellBook[spell].name}</p><br>`
                 html1 +=`<div class="spellContainer">
-                <h2>${spellBook[spell].name}</h2>
-                <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
-                <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
-                <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
-                <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
-                <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
-                <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
-                <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
-                <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
-                <p>${spellBook[spell].addtionNotes}</p>
-                <p>${spellBook[spell].spellText}</p><br>
-                <p>${spellBook[spell].atHigherLevel}</p>
+                <div class="spellInfo">
+                    <h2>${spellBook[spell].name}</h2>
+                    <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                    <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                    <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                    <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                    <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                    <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                    <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                    <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                    <p>${spellBook[spell].addtionNotes}</p>
+                    <p>${spellBook[spell].spellText}</p><br>
+                    <p>${spellBook[spell].atHigherLevel}</p>
+                </div>
                     <div class="spellImg">
                     <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                     </div>
@@ -414,6 +448,13 @@ app.depopulate = () => {
     // console.log("Depopluate Spell Area!")
     $(".spellArea").empty();
 
+}
+
+app.clear = () => {
+    $("#depopulateButton").on('click', function(){
+        // console.log("Clicked Depopulate!")
+        app.depopulate();
+    })
 }
 
 $(function(){
