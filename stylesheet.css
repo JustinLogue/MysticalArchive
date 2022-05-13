@@ -23,7 +23,7 @@ padding-left: 10%;
 #depopulateButton{
     height: 50px;
     width: 100px;
-    background-color: black;
+    background-color: red;
     color:white;
     border-radius: 50px;
     text-align: center;

@@ -355,6 +355,36 @@ const spellBook ={
         imageDiscription: "",
         // orginally I was thinking of allowing this spell to see a spell caster's spell list and block one spell for a round but then i decided to give that to Inquisition of Kozilek because the name is better, so I went with an effect that matches the name of the spell while still affecting spell casting so it's "somewhat" similar to hand attack.
     },
+    Eliminate: {
+        name: "Eliminate",
+        level: 5,
+        levelName: "5th",
+        school: "Necromancy",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Warlock, Wizard",
+        classes: {
+            1: "Sorcerer",
+            2: "Warlock",
+            3: "Wizard",
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Silverquill",
+        addtionNotes: "",
+        tags: {
+            1: "Damage",
+        },
+        range: "60 ft",
+        components: "V, S",
+        cost: false,
+        spellText: "You focus on ending the life force of one creature. Choose a target in range, if the creature you choose currently has 50 hit points or fewer, it dies. Otherwise, the spell has no effect.",
+        atHigherLevel: "",
+        imageUrl: "eliminate",
+        imageDiscription: "A person disinitgating starting at the back of the head",
+        // this was fairly easy, I just made a half power word kill. I removed bard because that makes more sense for a word based spell and made it necromancy cause I feel it makes more sense
+    },
 }
 
 app.innit = () => {
@@ -362,6 +392,7 @@ app.innit = () => {
     app.populate();
     app.levelSelect();
     app.clear();
+    app.schoolSelect();
     var userlevel;
 
 };
@@ -443,6 +474,44 @@ app.levelSelect = () =>{
     
 }
 
+app.schoolSelect = () =>{
+    $("#schoolSelection").on('change', function(){
+        userLevel =$('option:selected').val();
+        console.log(userLevel);
+        $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            if (userLevel == spellBook[spell].school){
+                console.log(spellBook[spell].name)
+                // html1 += `<p>${spellBook[spell].name}</p><br>`
+                html1 +=`<div class="spellContainer">
+                <div class="spellInfo">
+                    <h2>${spellBook[spell].name}</h2>
+                    <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                    <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                    <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                    <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                    <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                    <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                    <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                    <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                    <p>${spellBook[spell].addtionNotes}</p>
+                    <p>${spellBook[spell].spellText}</p><br>
+                    <p>${spellBook[spell].atHigherLevel}</p>
+                </div>
+                    <div class="spellImg">
+                    <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                    </div>
+                </div>
+                `;
+        }}
+        $(".spellArea").append(html1);
+        
+    })
+    
+}
 
 app.depopulate = () => {
     // console.log("Depopluate Spell Area!")
