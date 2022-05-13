@@ -341,7 +341,7 @@ const spellBook ={
         },
         set: "Mystic Archive",
         collegeImg: "",
-        college: "Silver Quil",
+        college: "Silverquill",
         addtionNotes: "",
         tags: {
             1: "Control",
@@ -354,6 +354,35 @@ const spellBook ={
         imageUrl: "duress",
         imageDiscription: "",
         // orginally I was thinking of allowing this spell to see a spell caster's spell list and block one spell for a round but then i decided to give that to Inquisition of Kozilek because the name is better, so I went with an effect that matches the name of the spell while still affecting spell casting so it's "somewhat" similar to hand attack.
+    },
+    Electrolyze: {
+        name: "Electrolyze",
+        level: 2,
+        levelName: "2nd",
+        school: "Evocation",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Wizard",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard"
+        },
+        set: "",
+        collegeImg: "Mystic Archive",
+        college: "Prismari",
+        addtionNotes: "",
+        tags: {
+            1: "Damage",
+        },
+        range: "120 ft",
+        components: "V, S, M (Two peices of copper wire twisted together)",
+        cost: false,
+        spellText: "You create three rays of lightning and shoot them at targets within range. You can shoot them at one target or several. Make a ranged spell attack for each ray. On a hit, the target takes 2d6 lightning damage.",
+        atHigherLevel: "<strong>At Higher Levels. </strong> When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.",
+        imageUrl: "electrolyze",
+        imageDiscription: "A mage chaennling a ball of lightning",
+        // literally just scoring ray but with lightning damage
     },
     Eliminate: {
         name: "Eliminate",
@@ -385,6 +414,7 @@ const spellBook ={
         imageDiscription: "A person disinitgating starting at the back of the head",
         // this was fairly easy, I just made a half power word kill. I removed bard because that makes more sense for a word based spell and made it necromancy cause I feel it makes more sense
     },
+
 }
 
 app.innit = () => {
@@ -393,7 +423,10 @@ app.innit = () => {
     app.levelSelect();
     app.clear();
     app.schoolSelect();
+    app.classSelect();
     var userlevel;
+    var choosenSchool;
+    var pickedClass;
 
 };
 
@@ -436,10 +469,11 @@ app.displayAll = () => {
 }
 
 app.levelSelect = () =>{
-    $("#levelSelection").on('change', function(){
-        userLevel =$('option:selected').val();
+    $("#level").on('change', function(){
+        console.log("clicked level selection")
+        userLevel =$('#levelSelection').val();
         console.log(userLevel);
-        $(".spellBook").empty();
+        // $(".spellBook").empty();
         app.depopulate();
         // app.getSpell(userLevel);
         var html1 = "";
@@ -469,21 +503,21 @@ app.levelSelect = () =>{
                 `;
         }}
         $(".spellArea").append(html1);
-        
     })
     
 }
 
 app.schoolSelect = () =>{
     $("#schoolSelection").on('change', function(){
-        userLevel =$('option:selected').val();
-        console.log(userLevel);
-        $(".spellBook").empty();
+        console.log("clicked school selection")
+        choosenSchool =$('#schoolSelection').val();
+        console.log(choosenSchool);
+        // $(".spellBook").empty();
         app.depopulate();
         // app.getSpell(userLevel);
         var html1 = "";
         for (spell in spellBook){
-            if (userLevel == spellBook[spell].school){
+            if (choosenSchool == spellBook[spell].school){
                 console.log(spellBook[spell].name)
                 // html1 += `<p>${spellBook[spell].name}</p><br>`
                 html1 +=`<div class="spellContainer">
@@ -512,6 +546,50 @@ app.schoolSelect = () =>{
     })
     
 }
+
+app.classSelect = () =>{
+    $("#classSelection").on('change', function(){
+        console.log("clicked class selection")
+        choosenClass =$('#classSelection').val();
+        console.log(choosenClass);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            for (pickedClass in spellBook[spell].classes){
+                if (spellBook[spell].classes[pickedClass] == choosenClass){
+                    console.log(spellBook[spell].name);
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                    </div>
+                        <div class="spellImg">
+                        <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                        </div>
+                    </div>
+                    `;
+
+                }
+            }
+        }
+        $(".spellArea").append(html1);
+    }
+        
+        
+    )}
+    
 
 app.depopulate = () => {
     // console.log("Depopluate Spell Area!")
