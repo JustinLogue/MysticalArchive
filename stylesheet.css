@@ -9,6 +9,19 @@ padding-left: 10%;
     text-align: center;
 }
 
+h3{
+    display: inline;
+    /* padding: 20px;
+    margin: 20px; */
+}
+
+/* .selector{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
 #populateButton{
     height: 50px;
     width: 100px;
@@ -88,9 +101,4 @@ padding-left: 10%;
     display: flex;
     border: black  3px solid;
     float: right;
-    height: 300px;
-
-  
-
-
 }
