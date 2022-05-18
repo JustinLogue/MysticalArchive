@@ -180,7 +180,7 @@ const spellBook ={
         school: "Conjuration",
         ritual: "",
         castingTime: "1 Action",
-        duration: "Concentration, up to 1 mintue",
+        duration: "",
         classNames: "Druid, Sorcerer",
         classes: {
             1: "Druid",
@@ -469,6 +469,33 @@ const spellBook ={
         atHigherLevel: "",
         imageUrl: "grapeshot",
         imageDiscription: "A wizard casting a spell hit several monsters at once.",
+    },
+    InquisitionOfKozilek: {
+        name: "Inquisition of Kozilek",
+        level: 1,
+        levelName: "1st",
+        school: "Enchantment",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Concentration, up to 1 mintue",
+        classNames: "Warlock",
+        classes: {
+            1: "Warlock",
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Oriq",
+        addtionNotes: "",
+        tags: {
+            1: "control",
+        },
+        range: "120 ft.",
+        components: "V, S, M(a shard of black ceramic material)",
+        cost: "No",
+        spellText: "You call upon power of the 'Butcher of Truth' block the spells of another creature. Choose a target in range, that target makes a Intelligence saving throw. On a failure you now know all spells that creature has perpaired if they have any. Choose one of those spells from 1st to 3rd level, for the duration of this spell that creature cannot cast that spell, even if they use spell slot above 3rd level. At the end of each of its turns, the target can make another Intelligence saving throw. On a success, the spell ends on the target.",
+        atHigherLevel: "",
+        imageUrl: "InquisitionOfKozilek",
+        imageDiscription: "A giant eldritch being attacking the mind of a human",
     },
 
 
