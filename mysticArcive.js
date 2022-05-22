@@ -233,6 +233,35 @@ const spellBook ={
         imageDiscription: "A Dragon being transformed into a box",
         // So I made a point to make creatures from each cr and then some items 
     },
+    Counterspell: {
+        name: "Counterspell",
+        level: 3,
+        levelName: "3rd",
+        school: "Abjuration",
+        ritual: "",
+        castingTime: "1 Reaction",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Warlock, Wizard",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard",
+            3: "Warlock",
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Quandrix",
+        addtionNotes: "",
+        tags: {
+            1: "Negation",
+        },
+        range: "60 ft ",
+        components: "S",
+        cost: "No",
+        spellText: "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.<br>",
+        atHigherLevel: "<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the interrupted spell has no effect if its level is less than or equal to the level of the spell slot you used.",
+        imageUrl: "counterspell",
+        imageDiscription: "A hand canceling out another person's spell",
+    },
     CruxOfFate: {
         name: "Crux of Fate",
         level: 5,
@@ -273,14 +302,14 @@ const spellBook ={
         ritual: "",
         castingTime: "1 Action",
         duration: "Instantaneous",
-        classNames: "Druid,www Cleric",
+        classNames: "Druid, Cleric",
         classes: {
             1: "Druid",
             2:"Cleric",
         },
         set: "Mystic Archive",
         collegeImg: "",
-        college: "Prismari",
+        college: "Oriq",
         addtionNotes: "",
         tags: {
             1: "Damage",
@@ -363,10 +392,11 @@ const spellBook ={
         ritual: "",
         castingTime: "1 action",
         duration: "Instantaneous",
-        classNames: "Sorcerer, Wizard",
+        classNames: "Sorcerer, Wizard, Artificer",
         classes: {
             1: "Sorcerer",
-            2: "Wizard"
+            2: "Wizard",
+            3: "Artificer"
         },
         set: "",
         collegeImg: "Mystic Archive",
@@ -497,7 +527,35 @@ const spellBook ={
         imageUrl: "InquisitionOfKozilek",
         imageDiscription: "A giant eldritch being attacking the mind of a human",
     },
-
+    LightningBolt
+    : {
+        name: " Lightning Bolt",
+        level: 3,
+        levelName: "3rd",
+        school: "Evocation ",
+        ritual: "",
+        castingTime: "1 Action ",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Wizard",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard",
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Prismari",
+        addtionNotes: "",
+        tags: {
+            1: "Damage",
+        },
+        range: "Self (100 ft.)",
+        components: "V, S, M (a bit of fur and a rod of amber, crystal, or glass)",
+        cost: "No",
+        spellText: "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.<br> The lightning ignites flammable objects in the area that aren't being worn or carried.",
+        atHigherLevel: "<strong>At Higher Levels.<strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+        imageUrl: "lightningBolt",
+        imageDiscription: "A wizard throwing a bolt of lightning.",
+    },
 
 }
 
@@ -509,6 +567,7 @@ app.innit = () => {
     app.schoolSelect();
     app.classSelect();
     app.costSelect();
+    app.intro();
     var userlevel;
     var choosenSchool;
     var pickedClass;
@@ -726,6 +785,17 @@ app.clear = () => {
     $("#depopulateButton").on('click', function(){
         // console.log("Clicked Depopulate!")
         app.depopulate();
+    })
+}
+
+app.intro = () => {
+    $(".book").on('click', function(){
+        console.log("Book Clicked!")
+        
+        var introArea = document.querySelector('.Intro');
+        introArea.style.display = "none"
+        var selectorArea = document.querySelector('.mainBody');
+        selectorArea.style.display = "inline-block"
     })
 }
 

@@ -14,72 +14,76 @@
         <div class="Intro">
             <h2>Welcome to the Mystic Archive</h2>
             <p>On the plane Arcavios proudly sits the university of Strixhaven. There the five colleges of Strixhaven study all forms of magic. On this campus is the Biblioplex, a library holding knowledge from across the mulitverse. Finally in the Biblioplex is the Mystic Archive, a wing of massive size holding spells from all words.<br></p>
-            <p>This website is a selection of homebrew spells to be used in 5th edition Dungeons and Dragons. The current spells are from the mystic archive subset of the Strixhaven expandtion and could be use in campaigns that take place in Strixhaven</p>
+            <p>This website is a selection of homebrew spells to be used in 5th edition Dungeons and Dragons. The current spells are from the mystic archive subset of the Strixhaven expandtion and could be use in campaigns that take place in Strixhaven. <em>Click the book below to open the search.</em></p>
+        
+
+            <div class="book">
+                <div class="back"></div>
+                <div class="page6"></div>
+                <div class="page5"></div>
+                <div class="page4"></div>
+                <div class="page3"></div>
+                <div class="page2"></div>
+                <div class="page1"></div>
+                <div class="front"></div>
+            </div>
         </div>
 
-        <div class="book">
-            <div class="back"></div>
-            <div class="page6"></div>
-            <div class="page5"></div>
-            <div class="page4"></div>
-            <div class="page3"></div>
-            <div class="page2"></div>
-            <div class="page1"></div>
-            <div class="front"></div>
-          </div>
+        <div class="mainBody">
+        
+          <div class="selector">
+                <div id="populateButton"><p>Display All!</p></div>
+                <div id="depopulateButton"><p>Remove All!</p></div>
+                
+                <h3>Spell Level</h3>
+                <select name="levelSelection" id="levelSelection">
+                    <option value="0">Cantrip</option>
+                    <option value="1">Level 1</option>
+                    <option value="2">Level 2</option>
+                    <option value="3">Level 3</option>
+                    <option value="4">Level 4</option>
+                    <option value="5">Level 5</option>
+                    <option value="6">Level 6</option>
+                    <option value="7">Level 7</option>
+                    <option value="8">Level 8</option>
+                    <option value="9">Level 9</option>
+                </select>
 
-        <div class="selector">
-            <div id="populateButton"><p>Display All!</p></div>
-            <div id="depopulateButton"><p>Remove All!</p></div>
-            
-            <h3>Spell Level</h3>
-            <select name="levelSelection" id="levelSelection">
-                <option value="0">Cantrip</option>
-                <option value="1">Level 1</option>
-                <option value="2">Level 2</option>
-                <option value="3">Level 3</option>
-                <option value="4">Level 4</option>
-                <option value="5">Level 5</option>
-                <option value="6">Level 6</option>
-                <option value="7">Level 7</option>
-                <option value="8">Level 8</option>
-                <option value="9">Level 9</option>
-            </select>
+                <h3>School of Magic</h3>
+                <select name="schoolSelection" id="schoolSelection">
+                    <option value="Conjuration">Conjuration</option>
+                    <option value="Necromancy">Necromancy</option>
+                    <option value="Evocation">Evocation</option>
+                    <option value="Abjuration ">Abjuration </option>
+                    <option value="Transmutation">Transmutation</option>
+                    <option value="Divination">Divination</option>
+                    <option value="Enchantment">Enchantment</option>
+                    <option value="Illusion">Illusion</option>
+                </select>
 
-            <h3>School of Magic</h3>
-            <select name="schoolSelection" id="schoolSelection">
-                <option value="Conjuration">Conjuration</option>
-                <option value="Necromancy">Necromancy</option>
-                <option value="Evocation">Evocation</option>
-                <option value="Abjuration ">Abjuration </option>
-                <option value="Transmutation">Transmutation</option>
-                <option value="Divination">Divination</option>
-                <option value="Enchantment">Enchantment</option>
-                <option value="Illusion">Illusion</option>
-            </select>
+                <h3>Caster Class</h3>
+                <select name="classSelection" id="classSelection">
+                    <option value="Artificer">Artificer</option>
+                    <option value="Bard">Bard</option>
+                    <option value="Cleric">Cleric</option>
+                    <option value="Druid">Druid</option>
+                    <option value="Paladin">Paladin</option>
+                    <option value="Ranger">Ranger</option>
+                    <option value="Sorcerer">Sorcerer</option>
+                    <option value="Warlock">Warlock</option>
+                    <option value="Wizard">Wizard</option>
+                </select>
+                
+                <h3>Has a material gold cost?</h3>
+                <select name="costSelection" id="costSelection">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
 
-            <h3>Caster Class</h3>
-            <select name="classSelection" id="classSelection">
-                <option value="Artificer">Artificer</option>
-                <option value="Bard">Bard</option>
-                <option value="Cleric">Cleric</option>
-                <option value="Druid">Druid</option>
-                <option value="Paladin">Paladin</option>
-                <option value="Ranger">Ranger</option>
-                <option value="Sorcerer">Sorcerer</option>
-                <option value="Warlock">Warlock</option>
-                <option value="Wizard">Wizard</option>
-            </select>
-            
-            <h3>Has a material gold cost?</h3>
-            <select name="costSelection" id="costSelection">
-                <option value="No">No</option>
-                <option value="Yes">Yes</option>
-            </select>
+            <div class="spellArea"></div>
         </div>
-
-        <div class="spellArea"></div>
-    
+        
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
