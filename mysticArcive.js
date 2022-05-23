@@ -534,7 +534,7 @@ const spellBook ={
         levelName: "3rd",
         school: "Evocation ",
         ritual: "",
-        castingTime: "1 Action ",
+        castingTime: "1 Action",
         duration: "Instantaneous",
         classNames: "Sorcerer, Wizard",
         classes: {
@@ -555,6 +555,35 @@ const spellBook ={
         atHigherLevel: "<strong>At Higher Levels.<strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
         imageUrl: "lightningBolt",
         imageDiscription: "A wizard throwing a bolt of lightning.",
+    },
+    LightningHelix: {
+        name: "Lightning Helix",
+        level: 2,
+        levelName: "2nd",
+        school: "Evocation",
+        ritual: "",
+        castingTime: "1 Action",
+        duration: "Instantaneous",
+        classNames: "Cleric, Paladin",
+        classes: {
+            1: "Cleric",
+            2: "Paladin"
+        },
+        set: "Mystic Archive",
+        collegeImg: "",
+        college: "Lorehold",
+        addtionNotes: "",
+        tags: {
+            1: "Damage",
+            2: "Healing" 
+        },
+        range: "30 ft.",
+        components: "V, S, M (a bit of cotton and a rod of amber, crystal, or glass)",
+        cost: "No",
+        spellText: "You channel a paradox of harm and healing and channel it into a blast of lightning. Make a ranged attack roll against a target in range. On a hit, you deal 4d6 lightning damage to the target, then you regain Hit Points equal to half the damage dealt.",
+        atHigherLevel: "<strong>At Higher Levels. </strong> When you cast this spell using a spell slot of 3th Level or higher, the damage increases by 1d6 for each slot level above 2rd. ",
+        imageUrl: "lightningHelix",
+        imageDiscription: "A warrior channeling a ball of lightning",
     },
 
 }

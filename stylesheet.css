@@ -1,10 +1,15 @@
+h2{
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
 .wrapper{
 margin-right: 10%;
 margin-left: 10%;
 background-color: white;
 height: auto;
 min-height: 100vh;
-padding-bottom: 10vh;
+
 
 }
 
@@ -18,19 +23,30 @@ h1{
 }
 
 body{
-  margin: 0 auto;
+  margin: 0;
   background-image: url(./assets/collegesVertical.png);
   background-size: 10%;
 }
 
-.bibloplex{
+/* .bibloplex{
     background: url(./assets/TheBiblioplex.jpg);
     text-align: center;
-}
+    background-size: cover;
+} */
 
-.intro{
-    justify-content: center;
-    text-align: center;
+.Intro{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-image: url(./assets/TheBiblioplex.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin: 0px;
+}
+.bookalignment{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .book {
@@ -39,6 +55,7 @@ body{
     height: 300px;
     cursor: pointer;
     backface-visibility: visible;
+    /* margin-left: 45%; */
   }
   
   .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
