@@ -57,6 +57,11 @@ body{
     backface-visibility: visible;
     /* margin-left: 45%; */
   }
+
+  .greyArea{
+    background-color: rgba(189, 195, 199, 0.6);
+
+  }
   
   .front, .back, .page1, .page2, .page3, .page4, .page5, .page6 {
     transform-style: preserve-3d;
@@ -170,15 +175,24 @@ h3{
 }
 
 /* .selector{
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
+display: flex;
 } */
+
+.selector div{
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 .mainBody{
   display: none;
+  margin-top: 10vh;
+  align-items: center;
+  justify-content: center;
 }
 
+.mainBody h2{
+margin-left: 50%;
+}
 #populateButton{
     height: 50px;
     width: 100px;
@@ -234,10 +248,6 @@ h3{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    
-    
-    
-
 }
 
 .spellInfo{
@@ -253,10 +263,26 @@ h3{
 }
 
 
+.ImgArea{
+  display: flex;
+}
 
 .spellImg{
-    display: flex;
+    display: block;
     border: black  3px solid;
     float: right;
     height: 300px
+}
+
+.AltButton{
+  height: 50px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  position: relative;
+  right: 50%;
+  top: 350px;
+  border-radius: 50px;
+  text-align: center;
+
 }

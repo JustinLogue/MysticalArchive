@@ -13,10 +13,14 @@
         <h1>Strixhaven Spell Library</h1> -->
 
         <div class="Intro">
-            <h2>Welcome to the Mystic Archive</h2>
-            <p>On the plane Arcavios proudly sits the university of Strixhaven. There the five colleges of Strixhaven study all forms of magic. On this campus is the Biblioplex, a library holding knowledge from across the mulitverse. Finally in the Biblioplex is the Mystic Archive, a wing of massive size holding spells from all words.<br></p>
+            <div class="greyArea">
+                <h2>Welcome to the Mystical Archive</h2>
+                <p>On the plane Arcavios proudly sits the university of Strixhaven. There the five colleges of Strixhaven study all forms of magic. On this campus is the Biblioplex, a library holding knowledge from across the mulitverse. Finally in the Biblioplex is the Mystical Archive, a wing of massive size holding spells from all words.<br></p>
+            </div>
             <img src="./assets/strixhavencrest.png">
-            <p>This website is a selection of homebrew spells to be used in 5th edition Dungeons and Dragons. The current spells are from the mystic archive subset of the Strixhaven expandtion and could be use in campaigns that take place in Strixhaven. <em>Click the book below to open the search.</em></p>
+            <div class="greyArea">
+                <p>This website is a selection of homebrew spells to be used in 5th edition Dungeons and Dragons. The current spells are from the Mystical Archive subset of the Strixhaven expandtion and could be use in campaigns that take place in Strixhaven. <em>Click the book below to open the search.</em></p>
+            </div>
         
             <div class="bookalignment">
                 <div class="book">
@@ -33,13 +37,16 @@
         </div>
 
         <div class="mainBody">
+
+            <h2>Filter Spells</h2>
         
           <div class="selector">
                 <div id="populateButton"><p>Display All!</p></div>
-                <div id="depopulateButton"><p>Remove All!</p></div>
+
                 
                 <h3>Spell Level</h3>
                 <select name="levelSelection" id="levelSelection">
+                    <option value="">---</option>
                     <option value="0">Cantrip</option>
                     <option value="1">Level 1</option>
                     <option value="2">Level 2</option>
@@ -54,6 +61,7 @@
 
                 <h3>School of Magic</h3>
                 <select name="schoolSelection" id="schoolSelection">
+                    <option value="">---</option>
                     <option value="Conjuration">Conjuration</option>
                     <option value="Necromancy">Necromancy</option>
                     <option value="Evocation">Evocation</option>
@@ -66,6 +74,7 @@
 
                 <h3>Caster Class</h3>
                 <select name="classSelection" id="classSelection">
+                    <option value="">---</option>
                     <option value="Artificer">Artificer</option>
                     <option value="Bard">Bard</option>
                     <option value="Cleric">Cleric</option>
@@ -76,20 +85,54 @@
                     <option value="Warlock">Warlock</option>
                     <option value="Wizard">Wizard</option>
                 </select>
+
+                <h3>College</h3>
+                <select name="collegeSelection" id="collegeSelection">
+                    <option value="">---</option>
+                    <option value="Lorehold">Lorehold</option>
+                    <option value="Prismari">Prismari</option>
+                    <option value="Quandrix">Quandrix</option>
+                    <option value="Witherbloom">Witherbloom</option>
+                    <option value="Silverquill">Silverquill</option>
+                    <option value="Oriq">Oriq</option>
+                </select>
+
+                <h3>Set</h3>
+                <select name="sourceSelection" id="sourceSelection">
+                    <option value="">---</option>
+                    <option value="Mystical Archive">Mystical Archive</option>
+                </select>
                 
                 <h3>Has a material gold cost?</h3>
                 <select name="costSelection" id="costSelection">
+                    <option value="">---</option>
                     <option value="No">No</option>
                     <option value="Yes">Yes</option>
                 </select>
+                <h3>Tags</h3>
+                <div class="tagArea">
+                </div>
+
+                <h3>Art Style</h3>
+                <select name="artSelection" id="artSelection">
+                    <option value="MYA">Mystical Archive</option>
+                    <option value="JAP">Japanese</option>
+
+                </select>
+
+                <div id="depopulateButton"><p>Remove All!</p></div>
             </div>
+
+            <div class="testerArea"></div>
 
             <div class="spellArea"></div>
         </div>
+
+        <footer></footer>
         
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="mysticArcive.js"></script>
+    <script src="mysticalArchive.js"></script>
 </body>
 </html>

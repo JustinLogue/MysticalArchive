@@ -40,7 +40,7 @@ const spellBook ={
         classes: {
             1: "Druid",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         college: "Witherbloom",
         collegeImg: "",
         addtionNotes: "",
@@ -72,7 +72,7 @@ const spellBook ={
             4: "Ranger",
             5: "Paladin"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         college: "Lorehold",
         collegeImg: "",
         addtionNotes: "",
@@ -100,7 +100,7 @@ const spellBook ={
         classes: {
             1: "Warlock",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         college: "Oriq",
         collegeImg: "",
         addtionNotes: "",
@@ -158,7 +158,7 @@ const spellBook ={
         classes: {
             1: "Wizard",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         college: "Quandrix",
         addtionNotes: "",
         tags: {
@@ -186,7 +186,7 @@ const spellBook ={
             1: "Druid",
             2: "Sorcerer"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Witherbloom",
         addtionNotes: "",
@@ -216,7 +216,7 @@ const spellBook ={
             2: "Wizard",
             3: "Warlock"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Oriq",
         addtionNotes: "",
@@ -239,7 +239,7 @@ const spellBook ={
         levelName: "3rd",
         school: "Abjuration",
         ritual: "",
-        castingTime: "1 Reaction",
+        castingTime: "1 Reaction *",
         duration: "Instantaneous",
         classNames: "Sorcerer, Warlock, Wizard",
         classes: {
@@ -247,14 +247,14 @@ const spellBook ={
             2: "Wizard",
             3: "Warlock",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Quandrix",
-        addtionNotes: "",
+        addtionNotes: "* - which you take when you see a creature within 60 feet of you casting a spell",
         tags: {
             1: "Negation",
         },
-        range: "60 ft ",
+        range: "60 ft",
         components: "S",
         cost: "No",
         spellText: "You attempt to interrupt a creature in the process of casting a spell. If the creature is casting a spell of 3rd level or lower, its spell fails and has no effect. If it is casting a spell of 4th level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect.<br>",
@@ -276,7 +276,7 @@ const spellBook ={
             2: "Wizard",
             3: "Warlock"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Oriq",
         addtionNotes: "",
@@ -307,7 +307,7 @@ const spellBook ={
             1: "Druid",
             2:"Cleric",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Oriq",
         addtionNotes: "",
@@ -337,7 +337,7 @@ const spellBook ={
             3: "Sorcercer",
             4: "Wizard"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Silverquill",
         addtionNotes: "",
@@ -368,7 +368,7 @@ const spellBook ={
             3: "Paladin",
             4: "Sorcerer"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Silverquill",
         addtionNotes: "",
@@ -398,8 +398,8 @@ const spellBook ={
             2: "Wizard",
             3: "Artificer"
         },
-        set: "",
-        collegeImg: "Mystic Archive",
+        set: "Mystical Archive",
+        collegeImg: "",
         college: "Prismari",
         addtionNotes: "",
         tags: {
@@ -428,7 +428,7 @@ const spellBook ={
             2: "Warlock",
             3: "Wizard",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Silverquill",
         addtionNotes: "",
@@ -456,12 +456,12 @@ const spellBook ={
         classes: {
             1: "Cleric",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Silverquill",
         addtionNotes: "",
         tags: {
-            1: "",
+            1: "Protect",
         },
         range: "30 ft",
         components: "V, S",
@@ -484,18 +484,18 @@ const spellBook ={
             1: "Wizard",
             2: "Sorcerer",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Prismari",
         addtionNotes: "",
         tags: {
-            1: "damage",
-            2: "storm"
+            1: "Damage",
+            2: "Storm"
         },
         range: "60 ft",
         components: "V, S, M(three or more ball bearings)",
         cost: "No",
-        spellText: "You pull upon the strings of the The Weave to cast magic based on the echo of spells cast before. You create a ray and fire it at a target within range. Make a ranged spell attack, on a hit it deals 2d6 fire damage to the target.<br> <strong>Storm: </strong> For each other spell cast with in range since the end of your last turn create a copy of this spell, you make choose new targets that are within range for each copy of this spell.",
+        spellText: "You pull upon the strings of the The Weave to cast magic based on the echo of spells cast before. You create a ray and fire it at a target within range. Make a ranged spell attack, on a hit it deals 2d6 fire damage to the target.<br> <strong>Storm: </strong> For each other spell cast with in 120 ft. since the end of your last turn create a copy of this spell, you make choose new targets that are within range for each copy of this spell.",
         atHigherLevel: "",
         imageUrl: "grapeshot",
         imageDiscription: "A wizard casting a spell hit several monsters at once.",
@@ -512,12 +512,12 @@ const spellBook ={
         classes: {
             1: "Warlock",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Oriq",
         addtionNotes: "",
         tags: {
-            1: "control",
+            1: "Control",
         },
         range: "120 ft.",
         components: "V, S, M(a shard of black ceramic material)",
@@ -529,10 +529,10 @@ const spellBook ={
     },
     LightningBolt
     : {
-        name: " Lightning Bolt",
+        name: "Lightning Bolt",
         level: 3,
         levelName: "3rd",
-        school: "Evocation ",
+        school: "Evocation",
         ritual: "",
         castingTime: "1 Action",
         duration: "Instantaneous",
@@ -541,7 +541,7 @@ const spellBook ={
             1: "Sorcerer",
             2: "Wizard",
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Prismari",
         addtionNotes: "",
@@ -552,7 +552,7 @@ const spellBook ={
         components: "V, S, M (a bit of fur and a rod of amber, crystal, or glass)",
         cost: "No",
         spellText: "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a Dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.<br> The lightning ignites flammable objects in the area that aren't being worn or carried.",
-        atHigherLevel: "<strong>At Higher Levels.<strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+        atHigherLevel: "<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
         imageUrl: "lightningBolt",
         imageDiscription: "A wizard throwing a bolt of lightning.",
     },
@@ -569,7 +569,7 @@ const spellBook ={
             1: "Cleric",
             2: "Paladin"
         },
-        set: "Mystic Archive",
+        set: "Mystical Archive",
         collegeImg: "",
         college: "Lorehold",
         addtionNotes: "",
@@ -585,8 +585,212 @@ const spellBook ={
         imageUrl: "lightningHelix",
         imageDiscription: "A warrior channeling a ball of lightning",
     },
+    ManaTithe: {
+        name: "Mana Tithe",
+        level: 1,
+        levelName: "1st",
+        school: "Abjuration",
+        ritual: "",
+        castingTime: "1 Reaction *",
+        duration: "Instantaneous",
+        classNames: "Cleric",
+        classes: {
+            1: "Cleric",
+        },
+        set: "Mystical Archive",
+        collegeImg: "",
+        college: "Silverquil",
+        addtionNotes: "* - which you take when you see a creature within 60 feet of you casting a spell ",
+        tags: {
+            1: "Negation",
+        },
+        range: "60 ft",
+        components: "",
+        cost: "No",
+        spellText: "You call upon threads of The Weave to tax another spellcasters's spell. Pick a target in range that is casting a spell. The spellcaster may now use up a spell slot of 1st level or higher, if they don't its spell fails and has no effect.",
+        atHigherLevel: "",
+        imageUrl: "manaTithe",
+        imageDiscription: "",
+    },
+    MemoryLapse: {
+        name: "Memory Lapse",
+        level: 2,
+        levelName: "2nd",
+        school: "Abjuration",
+        ritual: "",
+        castingTime: "1 Reaction *",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Warlock, Wizard",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard",
+            3: "Warlock",
+        },
+        set: "Mystical Archive",
+        collegeImg: "",
+        college: "Quandrix",
+        addtionNotes: "* - which you take when you see a creature within 60 feet of you casting a spell. ",
+        tags: {
+            1: "Negation",
+        },
+        range: "60 ft",
+        components: "s",
+        cost: "No",
+        spellText: "You attempt to interrupt a creature in the process of casting a spell. Make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a success, the creature's spell fails and has no effect however the target gets any spent spell slots used by the countered spell resotred.",
+        atHigherLevel: "",
+        imageUrl: "memoryLapse",
+        imageDiscription: "A woman reading a book. While she is read the infromation she is laerning is falling out of her head.",
+    },
+    MindsDesire: {
+        name: "Mind's Desire",
+        level: 6,
+        levelName: "6th",
+        school: "Conjuration",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Wizard, Sorcerer",
+        classes: {
+            1: "Wizard",
+            2: "Sorcerer"
+        },
+        set: "MysticalArchive",
+        collegeImg: "",
+        college: "Quandrix",
+        addtionNotes: "",
+        tags: {
+            1: "Storm",
+            2: "Random"
+        },
+        range: "Self",
+        components: "V, S, M(a crystal with multi facets when held up to the eye)",
+        cost: "No",
+        spellText: "You call upon the magic inside of you to expload form into the world in every way imaginable. Pick any 1st level or higher spell you have perapired at random. You may cast that spell without using a spell slot. <br> <strong>Storm: </strong> For each other spell cast with in 120 ft. since the end of your last turn create a copy of this spell, you make choose new targets that are within range for each copy of this spell.",
+        atHigherLevel: "",
+        imageUrl: "mindsDesire",
+        imageDiscription: "A wizard meditating, envision themelves traveling down a spiral stairway into their own mind",
+    },
+    Shock: {
+        name: "Shock",
+        level: 1,
+        levelName: "1st",
+        school: "Evocation",
+        ritual: "",
+        castingTime: "1 Action",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Wizard, Druid",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard",
+            3: "Druid"
+        },
+        set: "Mystical Archive",
+        collegeImg: "",
+        college: "Prismari",
+        addtionNotes: "",
+        tags: {
+            1: "Damage",
+        },
+        range: "60 ft",
+        components: "V, S",
+        cost: "No",
+        spellText: "You charge a quick bolt of lightning and throw it at a foe. Choose a target in range then make a ranged spell attack. On a hit, the target takes 3d8 lightning damage.",
+        atHigherLevel: "<strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2rd level or higher, the damage increases by 1d8 for each slot level above 1st.",
+        imageUrl: "shock",
+        imageDiscription: "A wizard throwning a ray of lgihtning",
+    },
+    TendrilsOfAgony: {
+        name: "Tendrils of Agony",
+        level: 4,
+        levelName: "4th",
+        school: "Necromancy",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Wizard, Sorcerer, Warlock",
+        classes: {
+            1: "Wizard",
+            2: "Sorcerer",
+            3: "Warlock"
+        },
+        set: "Mystical Archive",
+        collegeImg: "",
+        college: "Oriq",
+        addtionNotes: "",
+        tags: {
+            1: "Storm",
+            2: "Damage",
+            3: "Healing",
+        },
+        range: "60 ft..",
+        components: "V, S",
+        cost: "No",
+        spellText: "You call on shadowy Tendrils to attack your foes and heal you wounds. Make a ranged attack roll against a target in range, on hit you deal 2d6 necrotic danage to the target and you heal for half that amount <strong>Storm: </strong> For each other spell cast with in 120 ft. since the end of your last turn create a copy of this spell, you make choose new targets that are within range for each copy of this spell.",
+        atHigherLevel: "",
+        imageUrl: "TendrilsOfAgony",
+        imageDiscription: "A person's body being striped away by black magic",
+    },
+    WeatherTheStorm: {
+            name: "Weather The Storm",
+            level: 2,
+            levelName: "2nd",
+            school: "Evocation ",
+            ritual: "",
+            castingTime: "1 action",
+            duration: "Instantaneous",
+            classNames: "Druid, Ranger",
+            classes: {
+                1: "Druid",
+                2: "Ranger",
+            },
+            set: "Mystical Archive",
+            collegeImg: "",
+            college: "Witherbloom",
+            addtionNotes: "",
+            tags: {
+                1: "Storm",
+                2: "Healing"
+            },
+            range: "30 ft",
+            components: "",
+            cost: "No",
+            spellText: "Choose a willing target with 30 ft. They regains a number of Hit Points equal to 1d8 + your Spellcasting ability modifier. This spell has no Effect on Undead or Constructs. <strong>Storm: </strong> For each other spell cast with in 120 ft. since the end of your last turn create a copy of this spell, you make choose new targets that are within range for each copy of this spell.",
+            atHigherLevel: "",
+            imageUrl: "weatherTheStorm",
+            imageDiscription: "An elf meditating under a tree during a storm",
+        },
+            // name: {
+    //     name: "",
+    //     level: ,
+    //     levelName: "",
+    //     school: "",
+    //     ritual: "",
+    //     castingTime: "",
+    //     duration: "",
+    //     classNames: "",
+    //     classes: {
+    //         1: "",
+    //     },
+    //     set: "",
+    //     collegeImg: "",
+    //     college: "",
+    //     addtionNotes: "",
+    //     tags: {
+    //         1: "",
+    //     },
+    //     range: "",
+    //     components: "",
+    //     cost: "No",
+    //     spellText: "",
+    //     atHigherLevel: "",
+    //     imageUrl: "assets/.png",
+    //     imageDiscription: "",
+    // },
+};
 
-}
+
+
+
 
 app.innit = () => {
     console.log("started")
@@ -597,6 +801,10 @@ app.innit = () => {
     app.classSelect();
     app.costSelect();
     app.intro();
+    app.collegeSelect();
+    app.sourceSelect();
+    app.tagPopulate();
+    app.artSwitch();
     var userlevel;
     var choosenSchool;
     var pickedClass;
@@ -613,11 +821,14 @@ app.populate = () => {
 
 app.displayAll = () => {
     app.depopulate();
+    var pickedArt =$('#artSelection').val();
+    console.log(pickedArt)
     var html1 = "";
     for (spell in spellBook){
         console.log(spellBook[spell].name)
         // html1 += `<p>${spellBook[spell].name}</p><br>`
-        html1 +=`<div class="spellContainer">
+        if (pickedArt == "MYA"){
+            html1 +=`<div class="spellContainer">
             <div class="spellInfo">
                 <h2>${spellBook[spell].name}</h2>
                 <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
@@ -638,14 +849,41 @@ app.displayAll = () => {
            
         </div>
         `;
-    }
-    $(".spellArea").append(html1);
+        }
+        else if(pickedArt =="JAP"){
+            html1 +=`<div class="spellContainer">
+            <div class="spellInfo">
+                <h2>${spellBook[spell].name}</h2>
+                <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                <p>${spellBook[spell].addtionNotes}</p>
+                <p>${spellBook[spell].spellText}</p><br>
+                <p>${spellBook[spell].atHigherLevel}</p>
+                </div>
+                    <div class="spellImg">
+                    <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                    </div>
+           
+        </div>
+        `;
+        }
+ 
+}
+$(".spellArea").append(html1);
+
 }
 
 app.levelSelect = () =>{
     $("#levelSelection").on('change', function(){
         console.log("clicked level selection")
         userLevel =$('#levelSelection').val();
+        var pickedArt =$('#artSelection').val();
         console.log(userLevel);
         // $(".spellBook").empty();
         app.depopulate();
@@ -655,85 +893,7 @@ app.levelSelect = () =>{
             if (userLevel == spellBook[spell].level){
                 console.log(spellBook[spell].name)
                 // html1 += `<p>${spellBook[spell].name}</p><br>`
-                html1 +=`<div class="spellContainer">
-                <div class="spellInfo">
-                    <h2>${spellBook[spell].name}</h2>
-                    <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
-                    <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
-                    <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
-                    <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
-                    <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
-                    <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
-                    <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
-                    <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
-                    <p>${spellBook[spell].addtionNotes}</p>
-                    <p>${spellBook[spell].spellText}</p><br>
-                    <p>${spellBook[spell].atHigherLevel}</p>
-                </div>
-                    <div class="spellImg">
-                    <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
-                    </div>
-                </div>
-                `;
-        }}
-        $(".spellArea").append(html1);
-    })
-    
-}
-
-app.schoolSelect = () =>{
-    $("#schoolSelection").on('change', function(){
-        console.log("clicked school selection")
-        choosenSchool =$('#schoolSelection').val();
-        console.log(choosenSchool);
-        // $(".spellBook").empty();
-        app.depopulate();
-        // app.getSpell(userLevel);
-        var html1 = "";
-        for (spell in spellBook){
-            if (choosenSchool == spellBook[spell].school){
-                console.log(spellBook[spell].name)
-                // html1 += `<p>${spellBook[spell].name}</p><br>`
-                html1 +=`<div class="spellContainer">
-                <div class="spellInfo">
-                    <h2>${spellBook[spell].name}</h2>
-                    <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
-                    <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
-                    <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
-                    <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
-                    <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
-                    <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
-                    <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
-                    <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
-                    <p>${spellBook[spell].addtionNotes}</p>
-                    <p>${spellBook[spell].spellText}</p><br>
-                    <p>${spellBook[spell].atHigherLevel}</p>
-                </div>
-                    <div class="spellImg">
-                    <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
-                    </div>
-                </div>
-                `;
-        }}
-        $(".spellArea").append(html1);
-        
-    })
-    
-}
-
-app.classSelect = () =>{
-    $("#classSelection").on('change', function(){
-        console.log("clicked class selection")
-        choosenClass =$('#classSelection').val();
-        console.log(choosenClass);
-        // $(".spellBook").empty();
-        app.depopulate();
-        // app.getSpell(userLevel);
-        var html1 = "";
-        for (spell in spellBook){
-            for (pickedClass in spellBook[spell].classes){
-                if (spellBook[spell].classes[pickedClass] == choosenClass){
-                    console.log(spellBook[spell].name);
+                if (pickedArt == "MYA"){
                     html1 +=`<div class="spellContainer">
                     <div class="spellInfo">
                         <h2>${spellBook[spell].name}</h2>
@@ -748,26 +908,305 @@ app.classSelect = () =>{
                         <p>${spellBook[spell].addtionNotes}</p>
                         <p>${spellBook[spell].spellText}</p><br>
                         <p>${spellBook[spell].atHigherLevel}</p>
-                    </div>
-                        <div class="spellImg">
-                        <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                         </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+                }
+                else if(pickedArt =="JAP"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+        }}
+        
+     }$(".spellArea").append(html1);
+    })}
+    
+
+
+app.schoolSelect = () =>{
+    $("#schoolSelection").on('change', function(){
+        console.log("clicked school selection")
+        choosenSchool =$('#schoolSelection').val();
+        var pickedArt =$('#artSelection').val();
+        console.log(choosenSchool);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            if (choosenSchool == spellBook[spell].school){
+                console.log(spellBook[spell].name)
+                // html1 += `<p>${spellBook[spell].name}</p><br>`
+                if (pickedArt == "MYA"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+                }
+                else if(pickedArt =="JAP"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+        }}
+        
+     }$(".spellArea").append(html1);
+    })}
+
+app.classSelect = () =>{
+    $("#classSelection").on('change', function(){
+        console.log("clicked class selection")
+        choosenClass =$('#classSelection').val();
+        var pickedArt =$('#artSelection').val();
+        console.log(choosenClass);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            for (pickedClass in spellBook[spell].classes){
+                if (spellBook[spell].classes[pickedClass] == choosenClass){
+                    console.log(spellBook[spell].name);
+                    if (pickedArt == "MYA"){
+                        html1 +=`<div class="spellContainer">
+                        <div class="spellInfo">
+                            <h2>${spellBook[spell].name}</h2>
+                            <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                            <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                            <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                            <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                            <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                            <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                            <p>${spellBook[spell].addtionNotes}</p>
+                            <p>${spellBook[spell].spellText}</p><br>
+                            <p>${spellBook[spell].atHigherLevel}</p>
+                            </div>
+                                <div class="spellImg">
+                                <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                                </div>
+                       
                     </div>
                     `;
+                    }
+                    else if(pickedArt =="JAP"){
+                        html1 +=`<div class="spellContainer">
+                        <div class="spellInfo">
+                            <h2>${spellBook[spell].name}</h2>
+                            <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                            <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                            <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                            <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                            <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                            <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                            <p>${spellBook[spell].addtionNotes}</p>
+                            <p>${spellBook[spell].spellText}</p><br>
+                            <p>${spellBook[spell].atHigherLevel}</p>
+                            </div>
+                                <div class="spellImg">
+                                <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                                </div>
+                       
+                    </div>
+                    `;
+            }}
+            
+         }
+    }$(".spellArea").append(html1);
+})}
 
+app.collegeSelect = () =>{
+    $("#collegeSelection").on('change', function(){
+        console.log("clicked college selection")
+        choosenCollege =$('#collegeSelection').val();
+        var pickedArt =$('#artSelection').val();
+        console.log(choosenCollege);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            if (choosenCollege == spellBook[spell].college){
+                console.log(spellBook[spell].name)
+                // html1 += `<p>${spellBook[spell].name}</p><br>`
+                if (pickedArt == "MYA"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
                 }
-            }
-        }
-        $(".spellArea").append(html1);
-    }
+                else if(pickedArt =="JAP"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+        }}
         
+    }$(".spellArea").append(html1);
+})}
+
+app.sourceSelect = () =>{
+    $("#sourceSelection").on('change', function(){
+        console.log("clicked source selection")
+        choosenSource =$('#sourceSelection').val();
+        var pickedArt =$('#artSelection').val();
+        console.log(sourceSelection);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            if (choosenSource == spellBook[spell].set){
+                console.log(spellBook[spell].name)
+                // html1 += `<p>${spellBook[spell].name}</p><br>`
+                if (pickedArt == "MYA"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+                }
+                else if(pickedArt =="JAP"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+        }}
         
-)}
+    }$(".spellArea").append(html1);
+})}
 
 app.costSelect = () =>{
     $("#costSelection").on('change', function(){
         console.log("clicked cost selection")
         pickedCost =$('#costSelection').val();
+        var pickedArt =$('#artSelection').val();
         console.log(pickedCost);
         // $(".spellBook").empty();
         app.depopulate();
@@ -777,31 +1216,55 @@ app.costSelect = () =>{
             if (pickedCost == spellBook[spell].cost){
                 console.log(spellBook[spell].name)
                 // html1 += `<p>${spellBook[spell].name}</p><br>`
-                html1 +=`<div class="spellContainer">
-                <div class="spellInfo">
-                    <h2>${spellBook[spell].name}</h2>
-                    <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
-                    <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
-                    <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
-                    <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
-                    <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
-                    <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
-                    <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
-                    <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
-                    <p>${spellBook[spell].addtionNotes}</p>
-                    <p>${spellBook[spell].spellText}</p><br>
-                    <p>${spellBook[spell].atHigherLevel}</p>
+                if (pickedArt == "MYA"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
                 </div>
-                    <div class="spellImg">
-                    <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
-                    </div>
+                `;
+                }
+                else if(pickedArt =="JAP"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
                 </div>
                 `;
         }}
-        $(".spellArea").append(html1);
-    })
-    
-}
+        
+    }$(".spellArea").append(html1);
+})}
     
 
 app.depopulate = () => {
@@ -825,6 +1288,52 @@ app.intro = () => {
         introArea.style.display = "none"
         var selectorArea = document.querySelector('.mainBody');
         selectorArea.style.display = "inline-block"
+    })
+}
+
+app.tagPopulate = () => {
+    var html2 = `<select name="tagSelection" id="tagSelection">
+    <option value="">---</option>`;
+    var uniqueTags = [];
+    for(spell in spellBook){
+        for(tag in spellBook[spell].tags){
+            if(uniqueTags.includes((spellBook[spell].tags[tag])) == false)
+            uniqueTags.push(spellBook[spell].tags[tag]);
+        }
+
+        // console.log(spellBook[spell].tags[tag])
+
+
+    }
+    console.log(uniqueTags)
+    var tagLength = uniqueTags.length;
+    for(var n = 0;  n < tagLength; n++){
+        // console.log(uniqueTags[n])
+        html2 +=`
+        <option value="${uniqueTags[n]}">${uniqueTags[n]}</option>
+        `
+    }
+    html2 +="</select>"
+    $(".tagArea").append(html2);
+
+}
+
+app.artSwitch = () =>{
+    console.log("art switch active")
+    var switchcounter = 0;
+    $("#AltButton").on('click', function(){
+
+        console.log("art switch clicked")
+        $("#spellImg").empty();
+        if (switchcounter % 2 == 0){
+            var htmlspell = '<img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300"></img>'
+        }
+        else {
+            var htmlspell = '<img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300"></img>'
+        }
+        $(".spellImg").append(htmlspell);
+        switchcounter += 1;
+
     })
 }
 
