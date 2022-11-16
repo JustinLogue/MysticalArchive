@@ -804,6 +804,7 @@ app.innit = () => {
     app.collegeSelect();
     app.sourceSelect();
     app.tagPopulate();
+    app.tagSelect();
     app.artSwitch();
     var userlevel;
     var choosenSchool;
@@ -1317,6 +1318,72 @@ app.tagPopulate = () => {
     $(".tagArea").append(html2);
 
 }
+
+app.tagSelect = () =>{
+    $("#tagSelection").on('change', function(){
+        console.log("clicked tag selection")
+        choosenTag =$('#tagSelection').val();
+        var pickedArt =$('#artSelection').val();
+        console.log(choosenTag);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            for (pickedTag in spellBook[spell].tags){
+                if (spellBook[spell].tags[pickedTag] == choosenTag){
+                    console.log(spellBook[spell].name);
+                    if (pickedArt == "MYA"){
+                        html1 +=`<div class="spellContainer">
+                        <div class="spellInfo">
+                            <h2>${spellBook[spell].name}</h2>
+                            <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                            <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                            <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                            <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                            <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                            <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                            <p>${spellBook[spell].addtionNotes}</p>
+                            <p>${spellBook[spell].spellText}</p><br>
+                            <p>${spellBook[spell].atHigherLevel}</p>
+                            </div>
+                                <div class="spellImg">
+                                <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                                </div>
+                       
+                    </div>
+                    `;
+                    }
+                    else if(pickedArt =="JAP"){
+                        html1 +=`<div class="spellContainer">
+                        <div class="spellInfo">
+                            <h2>${spellBook[spell].name}</h2>
+                            <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                            <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                            <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                            <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                            <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                            <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                            <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                            <p>${spellBook[spell].addtionNotes}</p>
+                            <p>${spellBook[spell].spellText}</p><br>
+                            <p>${spellBook[spell].atHigherLevel}</p>
+                            </div>
+                                <div class="spellImg">
+                                <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                                </div>
+                       
+                    </div>
+                    `;
+            }}
+            
+         }
+    }$(".spellArea").append(html1);
+})}
+
 
 app.artSwitch = () =>{
     console.log("art switch active")

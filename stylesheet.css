@@ -170,6 +170,7 @@ body{
 
 h3{
     display: inline;
+    margin: 10px 1px 10px 20px;
     /* padding: 20px;
     margin: 20px; */
 }
@@ -193,6 +194,13 @@ display: flex;
 .mainBody h2{
 margin-left: 50%;
 }
+
+.TopButtons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #populateButton{
     height: 50px;
     width: 100px;
@@ -202,6 +210,8 @@ margin-left: 50%;
     text-align: center;
     display: inline-block;
     box-shadow: 0 6px #999;
+    margin-bottom: 20px;
+    margin-left: 130px;
 }
 
 #depopulateButton{
@@ -213,6 +223,7 @@ margin-left: 50%;
     text-align: center;
     display: inline-block;
     box-shadow: 0 6px #999;
+    margin-bottom: 20px;
 }
 
 #depopulateButton:hover{
