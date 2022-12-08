@@ -246,6 +246,18 @@ margin-left: 50%;
     transform: translateY(3px);
 }
 
+.selectPair{
+  display: inline-block;
+}
+
+#tagSelection{
+  display: inline-block;
+}
+
+.tagArea{
+  display: inline-block;
+}
+
 .spellContainer{
     border: black 5px solid;
     margin-top: 20px;
