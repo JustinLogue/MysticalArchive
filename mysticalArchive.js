@@ -758,7 +758,7 @@ const spellBook ={
             atHigherLevel: "",
             imageUrl: "weatherTheStorm",
             imageDiscription: "An elf meditating under a tree during a storm",
-        },
+    },
     SnakeskinVeil: {
         name: "Snakeskin Veil",
         level: 1,
@@ -931,6 +931,64 @@ const spellBook ={
         imageUrl: "signInBlood",
         imageDiscription: "A man putting his blood on a spell book/",
     },
+    TimeWarp: {
+        name: "Time Warp",
+        level: 9,
+        levelName: "9th",
+        school: "Transmutation",
+        ritual: "",
+        castingTime: "1 action",
+        duration: "Instantaneous",
+        classNames: "Sorcerer, Wizard",
+        classes: {
+            1: "Sorcerer",
+            2: "Wizard"
+        },
+        set: "Mystical Archive",
+        collegeImg: "",
+        college: "Quandrix",
+        addtionNotes: "",
+        tags: {
+            1: "Control",
+        },
+        range: "Self",
+        components: "V, S, M(a clockwork gear)",
+        cost: "No",
+        spellText: "Choose a target. You stop time for everyone but the target. No time passes for other Creatures, your current turn ends, while the target takes an extra turn during which it can use actions and move as normal.",
+        atHigherLevel: "",
+        imageUrl: "timeWarp",
+        imageDiscription: "A mage spining a time vortex",
+    },
+    TeferisProtection: {
+        name: "Teferi's Temporal Protection",
+        level: 9,
+        levelName: "9th",
+        school: "Conjuration ",
+        ritual: "",
+        castingTime: "1 Action",
+        duration: "1 Day",
+        classNames: "Wizard, Sorcerer, Warlock",
+        classes: {
+            1: "Wizard",
+            2: "Sorcerer",
+            3: "Warlock"
+        },
+        set: "Mystical Archive",
+        collegeImg: "",
+        college: "Quandrix",
+        addtionNotes: "",
+        tags: {
+            1: "Control",
+            2: ""
+        },
+        range: "Self",
+        components: "V, S",
+        cost: "No",
+        spellText: "You sunder time itself you protect those closest to you. Everything in a 30 ft sphere centered on you is phases out of time. You cannot be perceived by anything outside of the sphere unless it can perceived time non linearaly. Nothing can interact with the sphere. The area where the sphere was appears to have had everything removed from it, this inculdes the ground. Anything that enters the space will not interact with anything in the sphere. Inside the sphere time does not function properly. You cannot lose hit points or die, any effect that would disappear after a set amount of time are frozen at the time of casting. You don't reroll any saves for effects have can be ending prematurely like being charmed. You cannot have short or long rests. You can see outside of the sphere and figures that enter the space the sphere was at casting appear semi-transparent inside of the relative location with in the sphere. If you or anyother creature inside the sphere step outside of the sphere you appear in the real time line and it's time freezing effect not longer effect you. You cannot then reneter the time sphere. When the spell ends the sphere reappears in the extact location that it was first cast in. Any creatures that occupy the same space as any other creature or object when the spell ends takes 10d10 force damage and is then push 5 ft toward an unoccupied space, if there is no direct in 5 ft that unoccpuied then this process repeats untill they enter an unoccpied space the short distance from when they started.",
+        atHigherLevel: "",
+        imageUrl: "teferisProtection",
+        imageDiscription: "The Arch-Chronomancer Teferi casting the spell to hide a city.",
+    },
     
 };
 
@@ -952,6 +1010,7 @@ app.innit = () => {
     app.tagPopulate();
     app.tagSelect();
     app.artSwitch();
+    app.durationPopulate();
     var userlevel;
     var choosenSchool;
     var pickedClass;
@@ -1465,6 +1524,8 @@ app.tagPopulate = () => {
 
 }
 
+
+
 app.tagSelect = () =>{
     $("#tagSelection").on('change', function(){
         console.log("clicked tag selection")
@@ -1529,6 +1590,96 @@ app.tagSelect = () =>{
          }
     }$(".spellArea").append(html1);
 })}
+
+app.durationPopulate = () => {
+    var html2 = `<select name="durationSelection" id="durationSelection">
+    <option value="">---</option>`;
+    var uniqueDuration = [];
+    for(spell in spellBook){
+        if(uniqueDuration.includes((spellBook[spell].duration)) == false)
+        uniqueDuration.push(spellBook[spell].duration);
+        
+
+        // console.log(spellBook[spell].tags[tag])
+
+
+    }
+    console.log(uniqueDuration)
+    var durationLength = uniqueDuration.length;
+    for(var n = 0;  n < durationLength; n++){
+        // console.log(uniqueTags[n])
+        html2 +=`
+        <option value="${uniqueDuration[n]}">${uniqueDuration[n]}</option>
+        `
+    }
+    html2 +="</select>"
+    $(".durationArea").append(html2);
+
+}
+
+app.durationSelect = () =>{
+    $("#durationSelection").on('change', function(){
+        console.log("clicked duration selection")
+        choosenDuration =$('#durationlSelection').val();
+        var pickedArt =$('#artSelection').val();
+        console.log(choosenDuration);
+        // $(".spellBook").empty();
+        app.depopulate();
+        // app.getSpell(userLevel);
+        var html1 = "";
+        for (spell in spellBook){
+            if (durationSchool == spellBook[spell].duration){
+                console.log(spellBook[spell].duration)
+                // html1 += `<p>${spellBook[spell].name}</p><br>`
+                if (pickedArt == "MYA"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+                }
+                else if(pickedArt =="JAP"){
+                    html1 +=`<div class="spellContainer">
+                    <div class="spellInfo">
+                        <h2>${spellBook[spell].name}</h2>
+                        <p><strong>Origin: </strong> ${spellBook[spell].set}<br></p>
+                        <p><strong>College: </strong> ${spellBook[spell].college}<br></p>
+                        <p>${spellBook[spell].levelName} Level ${spellBook[spell].school} Spell ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Casting Time: </strong> ${spellBook[spell].castingTime} ${spellBook[spell].ritual}<br></p>
+                        <p><strong>Range: </strong> ${spellBook[spell].range}<br></p>
+                        <p><strong>Components: </strong> ${spellBook[spell].components}<br></p>
+                        <p><strong>Duration: </strong> ${spellBook[spell].duration}<br></p>
+                        <p><strong>Classes: </strong> ${spellBook[spell].classNames}<br></p>
+                        <p>${spellBook[spell].addtionNotes}</p>
+                        <p>${spellBook[spell].spellText}</p><br>
+                        <p>${spellBook[spell].atHigherLevel}</p>
+                        </div>
+                            <div class="spellImg">
+                            <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+                            </div>
+                   
+                </div>
+                `;
+        }}
+        
+     }$(".spellArea").append(html1);
+    })}
 
 
 app.artSwitch = () =>{
