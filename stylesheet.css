@@ -182,6 +182,15 @@ display: flex;
 .selector div{
   margin-left: 20px;
   margin-right: 20px;
+
+}
+
+.selector{
+  justify-content: space-evenly;
+}
+.contentJusitfier{
+  /* justify-content: space-around; */
+  justify-content: center;
 }
 
 .mainBody{
@@ -255,6 +264,14 @@ margin-left: 50%;
 }
 
 .tagArea{
+  display: inline-block;
+}
+
+#durationSelection{
+  display: inline-block;
+}
+
+.durationArea{
   display: inline-block;
 }
 
