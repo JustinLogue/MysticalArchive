@@ -1068,11 +1068,15 @@ app.displayAll = () => {
                 <p>${spellBook[spell].addtionNotes}</p>
                 <p>${spellBook[spell].spellText}</p><br>
                 <p>${spellBook[spell].atHigherLevel}</p>
-                </div>
-                    <div class="spellImg">
-                    <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
-                    </div>
-           
+            </div>
+
+            <div class="spellImg">
+                <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
+            </div>
+                
+            <div class="watermark">
+                <img src="assets/${spellBook[spell].college}.png">
+            </div>
         </div>
         `;
         }
@@ -1095,6 +1099,7 @@ app.displayAll = () => {
                     <div class="spellImg">
                     <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                     </div>
+                <img src="assets/${spellBook[spell].college}.png">
            
         </div>
         `;
