@@ -606,8 +606,8 @@ const spellBook ={
             1: "Cleric",
         },
         set: "Mystical Archive",
-        collegeImg: "",
-        college: "Silverquil",
+        collegeImg: "Silverquill",
+        college: "Silverquill",
         addtionNotes: "* - which you take when you see a creature within 60 feet of you casting a spell ",
         tags: {
             1: "Negation",
@@ -965,7 +965,7 @@ const spellBook ={
             2: "Wizard"
         },
         set: "Mystical Archive",
-        collegeImg: "",
+        collegeImg: "Quandrix",
         college: "Quandrix",
         addtionNotes: "",
         tags: {
@@ -995,7 +995,7 @@ const spellBook ={
         },
         set: "Mystical Archive",
         collegeImg: "",
-        college: "Quandrix",
+        college: "Lorehold",
         addtionNotes: "",
         tags: {
             1: "Control",
@@ -1031,6 +1031,7 @@ app.innit = () => {
     app.tagSelect();
     app.artSwitch();
     app.durationPopulate();
+    app.durationSelect();
     var userlevel;
     var choosenSchool;
     var pickedClass;
@@ -1143,6 +1144,9 @@ app.levelSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1166,6 +1170,9 @@ app.levelSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1209,6 +1216,9 @@ app.schoolSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1232,6 +1242,9 @@ app.schoolSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1273,6 +1286,9 @@ app.classSelect = () =>{
                                 <div class="spellImg">
                                 <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                                 </div>
+                            <div class="watermark">
+                                <img src="assets/${spellBook[spell].college}.png">
+                            </div>
                        
                     </div>
                     `;
@@ -1296,6 +1312,9 @@ app.classSelect = () =>{
                                 <div class="spellImg">
                                 <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                                 </div>
+                            <div class="watermark">
+                                <img src="assets/${spellBook[spell].college}.png">
+                            </div>
                        
                     </div>
                     `;
@@ -1338,6 +1357,9 @@ app.collegeSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1361,6 +1383,9 @@ app.collegeSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1402,6 +1427,9 @@ app.sourceSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1425,6 +1453,9 @@ app.sourceSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1466,6 +1497,9 @@ app.costSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1489,6 +1523,9 @@ app.costSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
@@ -1584,6 +1621,9 @@ app.tagSelect = () =>{
                                 <div class="spellImg">
                                 <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                                 </div>
+                            <div class="watermark">
+                                <img src="assets/${spellBook[spell].college}.png">
+                            </div>
                        
                     </div>
                     `;
@@ -1607,6 +1647,9 @@ app.tagSelect = () =>{
                                 <div class="spellImg">
                                 <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                                 </div>
+                            <div class="watermark">
+                                <img src="assets/${spellBook[spell].college}.png">
+                            </div>
                        
                     </div>
                     `;
@@ -1675,7 +1718,9 @@ app.durationSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
-                   
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>                   
                 </div>
                 `;
                 }
@@ -1698,6 +1743,9 @@ app.durationSelect = () =>{
                             <div class="spellImg">
                             <img src="assets/${spellBook[spell].imageUrl}Alt.jpg" alt="${spellBook[spell].imageDiscription}" width="300" height="300">
                             </div>
+                        <div class="watermark">
+                            <img src="assets/${spellBook[spell].college}.png">
+                        </div>
                    
                 </div>
                 `;
