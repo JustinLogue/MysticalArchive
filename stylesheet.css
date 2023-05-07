@@ -74,7 +74,14 @@ body{
   }
   
   .front, .back {
-    background: navy;
+    background: #5c0271;
+  }
+  .front img{
+  height: 200px;
+  width: 200px;
+
+
+
   }
   
   .front, .page1, .page3, .page5 {
